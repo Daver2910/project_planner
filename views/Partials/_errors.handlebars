@@ -1,0 +1,13 @@
+{{#each errors}}
+  <div class="alert alert-danger flash-msg--appear flash-msg--disappear">
+    {{text}}
+  </div>
+{{else}}
+
+{{/each}}
+
+{{#if error}}
+<div class="alert alert-danger flash-msg--appear flash-msg--disappear">
+  {{error}}
+</div>
+{{/if}}

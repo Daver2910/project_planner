@@ -1,0 +1,21 @@
+<div class="row">
+
+{{#each Ideas}}
+<div class="col-lg-6 col-md-6 col-sm-10-offset">
+  <div class="card card-body mb-4 card--decoration"><a href="/idea/project/{{id}}" class="link--stripped">
+    <h4>{{title}}</h4>
+    <p>{{due_date}}</p>
+    <p>{{details}}</p>
+    <p>{{plan}}</p>
+    <a class="btn btn-dark btn-block mb-2" href="/idea/edit/{{id}}">Edit</a>
+    <form method="post" action="/idea/{{id}}?_method=DELETE">
+      <input type="hidden" name="_method" value="DELETE">
+      <input type="submit" class="btn btn-danger btn-block" value="Delete">
+    </form>
+  </div>
+</a></div>
+{{else}}
+  <p>No Projects listed</p>
+{{/each}}
+
+</div>

@@ -1,0 +1,30 @@
+<div class="row">
+  <div class="col-md-6 mx-auto">
+    <div class="card card-body">
+      <h3 class="text-center">Login to Vidjot</h3>
+      <form action="/users/register" method="POST">
+        <div class="form-group">
+          <label for="fname">First Name</label>
+          <input type="text" name="fname" class="form-control" value="{{fname}}" required>
+        </div>
+        <div class="form-group">
+          <label for="sname">Surname Name</label>
+          <input type="text" name="sname" class="form-control" value="{{sname}}" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" name="email" class="form-control" value="{{email}}"  required>
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" name="password" class="form-control" value="{{password}}" required>
+        </div>
+        <div class="form-group">
+          <label for="password2">Confirm Password</label>
+          <input type="password" name="password2" class="form-control" value="{{password2}}" required>
+        </div>
+        <button type="submit" name="button" class="btn btn-primary">Register</button>
+      </form>
+    </div>
+  </div>
+</div>

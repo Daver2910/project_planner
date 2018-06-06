@@ -1,0 +1,26 @@
+
+
+
+<div class="card card-body card--decoration">
+  <h3>Add your Project</h3>
+  <form action="/idea" method="post">
+    <div class="form-group">
+      <label for="title">Title*</label>
+      <input type="text" name="title" class="form-control" value="{{title}}" required>
+    </div>
+    <div class="form-group">
+      <label for="title">Due Date</label>
+      <input type="text" name="dueDate" class="form-control" value="{{due_date}}">
+    </div>
+    <div class="form-group">
+      <label for="details">Details*</label>
+      <textarea name="details" class="form-control" value="{{details}}" required></textarea>
+    </div>
+    <div class="form-group">
+      <label for="details">Plan</label>
+      <textarea name="plan" class="form-control" value="{{plan}}"></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
